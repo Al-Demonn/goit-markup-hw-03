@@ -186,8 +186,7 @@ text-decoration: underline;
 	text-align: center;
 	text-transform: capitalize;
 	color: #2e2f42;
-	padding-top: 120px;
-	padding-bottom: 72px;
+
 }
 
 
@@ -242,12 +241,18 @@ width: calc((100%-3*24px)/4);
 /* #region team */
 .team {
 	background: #f4f4fd;
+	padding: 120px 0;
+}
+
+.title-team {
+	margin-bottom: 72px;
 }
 
 .team-list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 24px;
-	padding-bottom: 120px;
+
 }
 
 .team-title {
@@ -255,30 +260,27 @@ width: calc((100%-3*24px)/4);
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
-	text-align: center;
+	/* text-align: center; */
 	color: #2e2f42;
+	margin-bottom: 8px;
 }
 
 .team-item {
 	box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 	background: #fff;
-
 	border-radius: 0 0 4px 4px;
-	padding: 0px 0px 32px 0px;
 	width: 264px;
 	height: 380px;
+	width: calc((100%-3*24)/4);
+	
 }
 
 .team-box {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	flex-direction: column;
-	gap: 8px;
-	margin: 32px 16px;
+	padding: 32px 0;
 	width: 232px;
-	height: 56px;
-
 }
 
 .team-text {
@@ -293,19 +295,28 @@ width: calc((100%-3*24px)/4);
 
 /* #region portfolio */
 
+.portfolio {
+	padding: 120px 0;
+}
+
+.title-portfolio {
+	margin-bottom: 72px;
+}
+
 .portfolio-title {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: #2e2f42;
+	margin-bottom: 8px;
 }
 
 .portfolio-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 24px;
-	padding-bottom: 120px;
+	column-gap: 24px;
+	row-gap: 48px;
 }
 
 .portfolio-item {
@@ -317,7 +328,6 @@ width: calc((100%-3*24px)/4);
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	gap: 8px;
 
 	border-bottom: 1px solid #e7e9fc;
 	border-left: 1px solid #e7e9fc;
@@ -341,13 +351,12 @@ width: calc((100%-3*24px)/4);
 .footer {
 	background: #2e2f42;
 	height: 312px;
+	padding: 100px 0;
 }
 
 .footer-box {
 	width: 264px;
 	height: 112px;
-padding: 100px 0 100px;
-
 }
 
 .footer-logo {
@@ -358,6 +367,8 @@ padding: 100px 0 100px;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: #4d5ae5;
+	display: inline-block;
+	margin-bottom: 16px;
 }
 
 .footer-logo .accent {
